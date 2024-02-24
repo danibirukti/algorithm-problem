@@ -72,21 +72,21 @@
 // ○ Test case 2: If you give this array, [3, 0], to the function, output should be: 3 because
 // 3 + 0
 
-function logSumOfNumbers(arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
-  console.log(sum);
-}
+// function logSumOfNumbers(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   console.log(sum);
+// }
 
-// Test case 1:
-const array1 = [5, 6, 99, 8, 76, 4, 68, 44];
-logSumOfNumbers(array1); // Output: 310
+// // Test case 1:
+// const array1 = [5, 6, 99, 8, 76, 4, 68, 44];
+// logSumOfNumbers(array1); // Output: 310
 
-// Test case 2:
-const array2 = [3, 0];
-logSumOfNumbers(array2); // Output: 3
+// // Test case 2:
+// const array2 = [3, 0];
+// logSumOfNumbers(array2); // Output: 3
 
 
 // /question 6 Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all
@@ -163,5 +163,30 @@ logSumOfNumbers(array2); // Output: 3
 // const inputArray = [5, 6, 99, 8, 76, 4, 68, 44];
 // const result = calculateDifference(inputArray);
 
+// question 8 Write a function that takes an array as a parameter and logs in the console the elements that have
+// even indexes only. Notice: this question is not asking you to log elements with even value, but
+// elements that are located on even indexes)
+// ○ Test case 1: If you give this array to the function [5, 6, 99, 8, 76, 4, 68, 44], toutput
+// should be:
+// 5
+// 99
+// 76
+// 68
+// ○ Test case 2: If you give this array to the function [11, “Sam”, 3, 7, “car”], output should
+// be:
+// 11
+// 3
+// car
 
+function logElementsAtEvenIndexes(arr) {
+  for (let i = 0; i < arr.length; i += 2) {
+    console.log(arr[i]);
+  }
+}
+
+// Test case 1
+logElementsAtEvenIndexes([5, 6, 99, 8, 76, 4, 68, 44]);
+
+// Test case 2
+logElementsAtEvenIndexes([11, "Sam", 3, 7, "car"]);
 
