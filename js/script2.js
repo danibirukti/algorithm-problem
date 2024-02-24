@@ -128,5 +128,40 @@
 // const array = [5, 6, 99, 8, 76, 4, 68, 44];
 // calculateDifference(array);
 
+//  question 7 Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all
+// odd numbers of the array from the total sum of all even numbers and logs the result in the
+// console.
+// ○ Test case: If you give these array, [5, 6, 99, 8, 76, 4, 68, 44], to the function, output
+// should be: 102
+// ■ Sum of odd numbers: 5 + 99 = 104
+// ■ Sum of even numbers: 6 + 8 + 76 + 4 + 68 + 44 = 206
+// ■ Difference between total even and total odd numbers: 206 - 104 = 102
+
+function calculateDifference(arr) {
+  let sumOdd = 0;
+  let sumEven = 0;
+
+  // Loop through the array and calculate the sum of odd and even numbers
+  for (let number of arr) {
+      if (number % 2 === 0) {
+          sumEven += number;
+      } else {
+          sumOdd += number;
+      }
+  }
+
+  // Calculate the difference and log the result
+  const difference = sumEven - sumOdd;
+  console.log("Sum of odd numbers:", sumOdd);
+  console.log("Sum of even numbers:", sumEven);
+  console.log("Difference between total even and total odd numbers:", difference);
+
+  return difference;
+}
+
+// Test case
+const inputArray = [5, 6, 99, 8, 76, 4, 68, 44];
+const result = calculateDifference(inputArray);
+
 
 
