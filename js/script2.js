@@ -72,21 +72,21 @@
 // ○ Test case 2: If you give this array, [3, 0], to the function, output should be: 3 because
 // 3 + 0
 
-// function logSumOfNumbers(arr) {
-//   let sum = 0;
-//   for (let i = 0; i < arr.length; i++) {
-//     sum += arr[i];
-//   }
-//   console.log(sum);
-// }
+function logSumOfNumbers(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  console.log(sum);
+}
 
-// // Test case 1:
-// const array1 = [5, 6, 99, 8, 76, 4, 68, 44];
-// logSumOfNumbers(array1); // Output: 310
+// Test case 1:
+const array1 = [5, 6, 99, 8, 76, 4, 68, 44];
+logSumOfNumbers(array1); // Output: 310
 
-// // Test case 2:
-// const array2 = [3, 0];
-// logSumOfNumbers(array2); // Output: 3
+// Test case 2:
+const array2 = [3, 0];
+logSumOfNumbers(array2); // Output: 3
 
 
 // /question 6 Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all
@@ -137,31 +137,31 @@
 // ■ Sum of even numbers: 6 + 8 + 76 + 4 + 68 + 44 = 206
 // ■ Difference between total even and total odd numbers: 206 - 104 = 102
 
-function calculateDifference(arr) {
-  let sumOdd = 0;
-  let sumEven = 0;
+// function calculateDifference(arr) {
+//   let sumOdd = 0;
+//   let sumEven = 0;
 
-  // Loop through the array and calculate the sum of odd and even numbers
-  for (let number of arr) {
-      if (number % 2 === 0) {
-          sumEven += number;
-      } else {
-          sumOdd += number;
-      }
-  }
+//   // Loop through the array and calculate the sum of odd and even numbers
+//   for (let number of arr) {
+//       if (number % 2 === 0) {
+//           sumEven += number;
+//       } else {
+//           sumOdd += number;
+//       }
+//   }
 
-  // Calculate the difference and log the result
-  const difference = sumEven - sumOdd;
-  console.log("Sum of odd numbers:", sumOdd);
-  console.log("Sum of even numbers:", sumEven);
-  console.log("Difference between total even and total odd numbers:", difference);
+//   // Calculate the difference and log the result
+//   const difference = sumEven - sumOdd;
+//   console.log("Sum of odd numbers:", sumOdd);
+//   console.log("Sum of even numbers:", sumEven);
+//   console.log("Difference between total even and total odd numbers:", difference);
 
-  return difference;
-}
+//   return difference;
+// }
 
-// Test case
-const inputArray = [5, 6, 99, 8, 76, 4, 68, 44];
-const result = calculateDifference(inputArray);
+// // Test case
+// const inputArray = [5, 6, 99, 8, 76, 4, 68, 44];
+// const result = calculateDifference(inputArray);
 
 
 
