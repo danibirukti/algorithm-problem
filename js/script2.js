@@ -193,19 +193,36 @@
 // question 9 Write a function that takes the sampleArray as a parameter, removes the last element from the array,
 // adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method
 
-function modifyArray(sampleArray) {
-  // Remove the last element
-  sampleArray.pop();
+// function modifyArray(sampleArray) {
+//   // Remove the last element
+//   sampleArray.pop();
 
-  // Add a new value of "32"
-  sampleArray.push("32");
+//   // Add a new value of "32"
+//   sampleArray.push("32");
 
-  // Print the new array on the console
+//   // Print the new array on the console
+//   console.log(sampleArray);
+// }
+
+// // Example usage
+// let myArray = [5, 6, 99, 8, 76, 4, 68, 44];
+// modifyArray(myArray);
+
+// question 10 Write a function that takes the sampleArray as an argument, sorts the array in ascending order
+// and prints the sorted array on the console
+// // Use the sort method. Make sure you understand just using the sort() method alphabetically.
+// You should use this sorting syntax - sort(function(a, b){return a-b});
+
+function sortArrayAscending(sampleArray) {
+  // Sort the array in ascending order
+  sampleArray.sort(function(a, b) {
+      return a - b;
+  });
+
+  // Print the sorted array on the console
   console.log(sampleArray);
 }
 
 // Example usage
-let myArray = [5, 6, 99, 8, 76, 4, 68, 44];
-modifyArray(myArray);
-
-
+let myArray = [5, 2, 8, 1, 4];
+sortArrayAscending(myArray);
