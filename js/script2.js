@@ -178,15 +178,34 @@
 // 3
 // car
 
-function logElementsAtEvenIndexes(arr) {
-  for (let i = 0; i < arr.length; i += 2) {
-    console.log(arr[i]);
-  }
+// function logElementsAtEvenIndexes(arr) {
+//   for (let i = 0; i < arr.length; i += 2) {
+//     console.log(arr[i]);
+//   }
+// }
+
+// // Test case 1
+// logElementsAtEvenIndexes([5, 6, 99, 8, 76, 4, 68, 44]);
+
+// // Test case 2
+// logElementsAtEvenIndexes([11, "Sam", 3, 7, "car"]);
+
+// question 9 Write a function that takes the sampleArray as a parameter, removes the last element from the array,
+// adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method
+
+function modifyArray(sampleArray) {
+  // Remove the last element
+  sampleArray.pop();
+
+  // Add a new value of "32"
+  sampleArray.push("32");
+
+  // Print the new array on the console
+  console.log(sampleArray);
 }
 
-// Test case 1
-logElementsAtEvenIndexes([5, 6, 99, 8, 76, 4, 68, 44]);
+// Example usage
+let myArray = [5, 6, 99, 8, 76, 4, 68, 44];
+modifyArray(myArray);
 
-// Test case 2
-logElementsAtEvenIndexes([11, "Sam", 3, 7, "car"]);
 
