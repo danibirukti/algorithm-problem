@@ -197,15 +197,15 @@
 //   // Remove the last element
 //   sampleArray.pop();
 
-//   // Add a new value of "32"
-//   sampleArray.push("32");
+  // Add a new value of "32"
+  // sampleArray.push("32");
 
-//   // Print the new array on the console
-//   console.log(sampleArray);
+  // Print the new array on the console
+  // console.log(sampleArray);
 // }
 
-// // Example usage
-// let myArray = [5, 6, 99, 8, 76, 4, 68, 44];
+// Example usage
+// let myArray = [5, 6, 99, 8, 76, 4, 68, 44]
 // modifyArray(myArray);
 
 // question 10 Write a function that takes the sampleArray as an argument, sorts the array in ascending order
@@ -213,16 +213,33 @@
 // // Use the sort method. Make sure you understand just using the sort() method alphabetically.
 // You should use this sorting syntax - sort(function(a, b){return a-b});
 
-function sortArrayAscending(sampleArray) {
+// function sortArrayAscending(sampleArray) {
   // Sort the array in ascending order
-  sampleArray.sort(function(a, b) {
-      return a - b;
-  });
+  // sampleArray.sort(function(a, b) {
 
-  // Print the sorted array on the console
-  console.log(sampleArray);
-}
+// // Example usage
+// let myArray = [5, 2, 8, 1, 4];
+// sortArrayAscending(myArray);
 
-// Example usage
-let myArray = [5, 2, 8, 1, 4];
-sortArrayAscending(myArray);
+// Create a function that takes length and width and finds the perimeter of a rectangle.
+
+// Examples
+// findPerimeter(6, 7) ➞ 26
+
+// findPerimeter(20, 10) ➞ 60
+
+// findPerimeter(2, 9) ➞ 22
+function findPerimeter(length, width) {
+    return 2 * (length + width);
+  }
+  
+  // Examples
+  var result1 = findPerimeter(6, 7);
+  console.log(result1);  // Output: 26
+  
+  var result2 = findPerimeter(20, 10);
+  console.log(result2);  // Output: 60
+  
+  var result3 = findPerimeter(2, 9);
+  console.log(result3);  // Output: 22
+  
