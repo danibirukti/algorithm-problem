@@ -243,4 +243,4 @@
 //   var result3 = findPerimeter(2, 9);
 //   console.log(result3);  // Output: 22
 //   // 
-console.log (hello)
+// console.log (hello)
