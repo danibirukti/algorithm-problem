@@ -229,17 +229,17 @@
 // findPerimeter(20, 10) ➞ 60
 
 // findPerimeter(2, 9) ➞ 22
-function findPerimeter(length, width) {
-    return 2 * (length + width);
-  }
+// function findPerimeter(length, width) {
+//     return 2 * (length + width);
+//   }
   
-  // Examples
-  var result1 = findPerimeter(6, 7);
-  console.log(result1);  // Output: 26
+//   // Examples
+//   var result1 = findPerimeter(6, 7);
+//   console.log(result1);  // Output: 26
   
-  var result2 = findPerimeter(20, 10);
-  console.log(result2);  // Output: 60
+//   var result2 = findPerimeter(20, 10);
+//   console.log(result2);  // Output: 60
   
-  var result3 = findPerimeter(2, 9);
-  console.log(result3);  // Output: 22
-  
+//   var result3 = findPerimeter(2, 9);
+//   console.log(result3);  // Output: 22
+//   // 
